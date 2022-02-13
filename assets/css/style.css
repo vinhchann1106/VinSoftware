@@ -1,0 +1,385 @@
+/* Simple CSS Reset */
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+}
+
+/* Typography CSS */
+html {
+  font-family: "Quicksand", sans-serif;
+  font-size: 62.5%;
+  font-weight: 500;
+  line-height: 1.6;
+  min-height: 100vh;
+  scroll-behavior: smooth;
+}
+
+.wrapper {
+  max-width: 1440px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.container {
+  padding-left: 80px;
+  padding-right: 80px;
+  margin: 0 auto;
+}
+@media screen and (max-width: 940px) {
+  .container {
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+.btn {
+  display: inline-block;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  padding: 12px 24px;
+  font-size: 1.6rem;
+  border-radius: 12px;
+  transition: all 0.2s linear;
+}
+.btn:hover {
+  opacity: 0.8;
+}
+.btn--primary {
+  background-color: #ffad60;
+  color: #fff !important;
+}
+.btn--secondary {
+  background-color: #4fbdba;
+  color: #fff !important;
+}
+
+h1 {
+  font-size: calc(6vmin + 0.6rem);
+}
+
+h2 {
+  font-size: calc(5vmin + 0.6rem);
+}
+
+h3 {
+  font-size: calc(4vmin + 0.6rem);
+}
+
+h4 {
+  font-size: calc(3vmin + 0.6rem);
+}
+
+h5 {
+  font-size: calc(2vmin + 0.6rem);
+}
+
+h6 {
+  font-size: calc(1vmin + 0.6rem);
+}
+
+.header {
+  width: 100%;
+  background-color: #323232;
+  padding: 12px 0;
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+  position: fixed;
+  z-index: 1000;
+}
+.header .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header_logo {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 8px;
+  align-items: center;
+  font-size: 1.8rem;
+  line-height: 1;
+  font-weight: 700;
+  color: #f76e11;
+  text-decoration: none;
+  transition: all 0.2s linear;
+  user-select: none;
+}
+.header_logo:hover {
+  opacity: 0.8;
+}
+.header_logo-icon {
+  font-size: 2.4rem;
+}
+
+.menu {
+  list-style: none;
+  display: flex;
+  align-items: center;
+}
+
+.menu-close,
+.menu-open {
+  color: #fff;
+  font-size: 3.4rem;
+  cursor: pointer;
+  display: none;
+}
+
+.menu-open {
+  position: relative;
+  left: 20px;
+}
+
+.menu--active ~ .menu-open {
+  display: none;
+}
+
+.menu-close {
+  position: absolute;
+  top: 12px;
+  right: 10px;
+}
+
+.menu-item + .menu-item {
+  margin: 0 0 0 24px;
+}
+
+.menu-link {
+  color: #f7f7f7;
+  text-decoration: none;
+  font-size: 1.6rem;
+  font-weight: 600;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.menu-link:hover::before {
+  opacity: 1;
+}
+
+.menu-link::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background-color: #aefeff;
+  opacity: 0;
+  transition: all 0.2s linear;
+}
+
+.menu-auth {
+  display: grid;
+  grid-auto-flow: column;
+  grid-gap: 12px;
+  align-items: center;
+  padding-left: 12px;
+}
+
+@media screen and (max-width: 860px) {
+  .menu {
+    position: fixed;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    background-color: #0f0e0e;
+    height: 100%;
+    padding: 0 28px;
+    transform: translateX(310px);
+    transition: all 0.4s ease-in-out;
+    justify-content: center;
+    overflow: hidden;
+  }
+
+  .menu--active {
+    transform: translate(0);
+  }
+
+  .menu-open {
+    display: block;
+  }
+
+  .menu-close {
+    display: block;
+  }
+
+  .menu-auth {
+    padding-left: 0;
+    padding-top: 34px;
+  }
+
+  .menu-item + .menu-item {
+    margin: 24px 0 0 0;
+  }
+}
+.banner {
+  padding: 80px 0;
+  margin-bottom: 100px;
+  background-color: #f8f8f8;
+}
+.banner-container {
+  display: flex;
+  align-items: center;
+}
+@media screen and (max-width: 767px) {
+  .banner-container {
+    flex-direction: column-reverse;
+  }
+}
+.banner-content {
+  flex: 1 0 50%;
+  cursor: default;
+  transition: all 0.3s ease-in-out;
+}
+.banner-content:hover {
+  transform: scale(1.02);
+}
+.banner-heading {
+  padding-bottom: 4px;
+  position: relative;
+  margin-bottom: 28px;
+  width: fit-content;
+  color: #03045e;
+}
+.banner-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 12px;
+  height: 4px;
+  width: 50%;
+  background: currentColor;
+  opacity: 0.8;
+}
+.banner-desc {
+  color: #333;
+  font-size: 1.6rem;
+  padding-left: 6px;
+  border-left: 1px solid #4e4e4e;
+  margin-bottom: 30px;
+}
+.banner-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: all 0.3s ease;
+}
+.banner-image img:hover {
+  transform: scale(1.02);
+}
+
+.product {
+  margin-bottom: 100px;
+}
+.product-heading {
+  margin-bottom: 48px;
+  text-align: center;
+}
+.product-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(0, 360px));
+  grid-gap: 24px;
+  place-items: center;
+  align-items: stretch;
+}
+.product-card {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  max-width: 360px;
+  padding: 24px 16px;
+  border: 1px solid #dbdbdb;
+  background-color: #f7f7f7;
+  border-radius: 6px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  transition: all 0.2s linear;
+  cursor: pointer;
+}
+.product-card:hover {
+  transform: scale(1.02);
+}
+.product-image {
+  width: 100%;
+}
+.product-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+.product-name {
+  font-size: 2.8rem;
+  color: #1572a1;
+  margin-bottom: 8px;
+  text-align: center;
+}
+.product-category {
+  font-size: 1.6rem;
+  text-align: start;
+  margin-bottom: 8px;
+}
+.product-category strong {
+  color: #e60965;
+  font-style: italic;
+}
+.product-desc {
+  margin-bottom: 32px;
+  font-size: 1.5rem;
+}
+.product-buttons {
+  margin-top: auto;
+}
+.product-btn--try {
+  background-color: #2666cf;
+  color: white;
+  border-radius: 4px;
+}
+.product-btn--detail {
+  margin-left: 10px;
+  background-color: #f76e11;
+  color: white;
+  border-radius: 4px;
+}
+
+.footer {
+  width: 100%;
+  padding: 40px 0;
+  background-color: #323232;
+  position: relative;
+}
+.footer .container {
+  color: #fff;
+  height: 100%;
+}
+.footer-contact-list {
+  margin-bottom: 60px;
+}
+.footer-contact-item {
+  display: flex;
+  align-items: center;
+  width: fit-content;
+  font-size: 1.4rem;
+}
+.footer-contact-item:hover {
+  opacity: 0.6;
+}
+.footer-contact-item a {
+  margin-left: 8px;
+  color: inherit;
+  text-decoration: none;
+}
+.footer-contact-item:not(:first-child) {
+  margin-top: 8px;
+}
+.footer-copyright {
+  position: absolute;
+  bottom: 20px;
+  right: 20px;
+  font-size: 1.2rem;
+  font-style: italic;
+}
+
+/*# sourceMappingURL=style.css.map */

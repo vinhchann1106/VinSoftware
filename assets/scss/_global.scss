@@ -1,0 +1,57 @@
+.wrapper {
+    max-width: 1440px;
+    width: 100%;
+    margin: 0 auto;
+}
+.container {
+    padding-left: 80px;
+    padding-right: 80px;
+    margin: 0 auto;
+    @media screen and (max-width: 940px) {
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+}
+
+.btn {
+    display: inline-block;
+    outline: none;
+    border: none;
+    text-decoration: none;
+    padding: 12px 24px;
+    font-size: 1.6rem;
+    border-radius: 12px;
+    transition: all 0.2s linear;
+    &:hover {
+        opacity: 0.8;
+    }
+    &--primary {
+        background-color: #ffad60;
+        color: #fff !important;
+    }
+    &--secondary {
+        background-color: #4fbdba;
+        color: #fff !important;
+    }
+}
+
+// Heading
+
+h1 {
+    font-size: calc(0.5vmin * 12 + 0.6rem);
+}
+h2 {
+    font-size: calc(0.5vmin * 10 + 0.6rem);
+}
+h3 {
+    font-size: calc(0.5vmin * 8 + 0.6rem);
+}
+h4 {
+    font-size: calc(0.5vmin * 6 + 0.6rem);
+}
+h5 {
+    font-size: calc(0.5vmin * 4 + 0.6rem);
+}
+h6 {
+    font-size: calc(0.5vmin * 2 + 0.6rem);
+}
