@@ -26,6 +26,7 @@ html {
   padding-left: 80px;
   padding-right: 80px;
   margin: 0 auto;
+  max-width: 100%;
 }
 @media screen and (max-width: 940px) {
   .container {
@@ -36,6 +37,7 @@ html {
 
 .btn {
   display: inline-block;
+  text-align: center;
   outline: none;
   border: none;
   text-decoration: none;
@@ -57,27 +59,42 @@ html {
 }
 
 h1 {
-  font-size: calc(6vmin + 0.6rem);
+  font-size: 4.2rem;
 }
 
 h2 {
-  font-size: calc(5vmin + 0.6rem);
+  font-size: 3.6rem;
 }
 
 h3 {
-  font-size: calc(4vmin + 0.6rem);
+  font-size: 3rem;
 }
 
 h4 {
-  font-size: calc(3vmin + 0.6rem);
+  font-size: 2.4rem;
 }
 
 h5 {
-  font-size: calc(2vmin + 0.6rem);
+  font-size: 1.8rem;
 }
 
 h6 {
-  font-size: calc(1vmin + 0.6rem);
+  font-size: 1.2rem;
+}
+
+.group-heading {
+  position: relative;
+  text-align: center;
+}
+.group-heading::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 25%;
+  height: 3px;
+  background-image: linear-gradient(to right, #cc2b5e, #753a88);
 }
 
 .header {
@@ -86,6 +103,8 @@ h6 {
   padding: 12px 0;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 1000;
 }
 .header .container {
@@ -329,8 +348,13 @@ h6 {
   margin-bottom: 32px;
   font-size: 1.5rem;
 }
-.product-buttons {
+.product-card-buttons {
+  width: 100%;
   margin-top: auto;
+  display: inline-flex;
+  align-items: baseline;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .product-btn--try {
   background-color: #2666cf;
@@ -338,7 +362,7 @@ h6 {
   border-radius: 4px;
 }
 .product-btn--detail {
-  margin-left: 10px;
+  margin-top: 10px;
   background-color: #f76e11;
   color: white;
   border-radius: 4px;
@@ -380,6 +404,7 @@ h6 {
   right: 20px;
   font-size: 1.2rem;
   font-style: italic;
+  user-select: none;
 }
 
 /*# sourceMappingURL=style.css.map */
