@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <script
+            type="module"
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+        ></script>
+        <script
+            nomodule
+            src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+        ></script>
+        <link rel="stylesheet" href="../assets/css/style.css" />
+        <title>VinSoftware - Signup</title>
+    </head>
+    <body>
+        <header class="header">
+            <div class="container">
+                <a href="../index.html" class="header_logo">
+                    <ion-icon
+                        class="header_logo-icon"
+                        name="logo-apple-ar"
+                    ></ion-icon>
+                    VinSoftware
+                </a>
+                <ion-icon class="menu-open" name="menu-outline"></ion-icon>
+                <ul class="menu">
+                    <ion-icon
+                        class="menu-close"
+                        name="close-outline"
+                    ></ion-icon>
+                    <li class="menu-item">
+                        <a href="../index.html" class="menu-link">Trang chủ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Sản phẩm</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bảng giá</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Dịch vụ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Liên hệ</a>
+                    </li>
+                    <li class="menu-item menu-auth">
+                        <a href="./login.html" class="btn btn--primary"
+                            >Đăng nhập</a
+                        >
+                        <a href="./signup.html" class="btn btn--secondary"
+                            >Đăng ký</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="wrapper">
+            <div class="container signup-container">
+                <form action="" class="signup-form">
+                    <h2 class="signup-heading group-heading">
+                        Đăng ký với VinSoftware
+                    </h2>
+                    <div class="form-group">
+                        <label for="">Họ và tên</label>
+                        <input type="text" class="fullname" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Tên đăng nhập</label>
+                        <input type="text" class="username" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Mật khẩu</label>
+                        <input type="password" class="password" required />
+                    </div>
+                    <div class="form-group">
+                        <label for="">Nhập lại mật khẩu</label>
+                        <input type="password" class="rePassword" required />
+                    </div>
+                    <button type="submit">Đăng ký</button>
+                </form>
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <a href="mailto:vinhchann1106@gmail.com"
+                            >Email: vinhchann1106@gmail.com</a
+                        >
+                    </div>
+                    <div class="footer-contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="tel:+843982828062">Phone: +84398282062</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="#">Zalo: 0398282062</a>
+                    </div>
+                    <div class="footer-contact-item">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <a
+                            href="https://www.facebook.com/vinh.chann1111"
+                            target="_blank"
+                            >Facebook: Vinh Chann</a
+                        >
+                    </div>
+                </div>
+                <span class="footer-copyright"
+                    >Copyright 2022 © Vinh Chann</span
+                >
+            </div>
+        </footer>
+        <script src="../assets/script/menu.js"></script>
+    </body>
+</html>

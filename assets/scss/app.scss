@@ -1,3 +1,6 @@
+// Quicksand Font - Google Font
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap");
+
 @import "reset.scss";
 @import "variables.scss";
 @import "typography.scss";
@@ -7,3 +10,5 @@
 @import "./PageComponents/Main/Banner.scss";
 @import "./PageComponents/Main/Product.scss";
 @import "./PageComponents/Footer/Footer.scss";
+@import "./AuthPage/Login.scss";
+@import "./AuthPage/Signup.scss";

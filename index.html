@@ -4,12 +4,6 @@
         <meta charset="UTF-8" />
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link
-            href="https://fonts.googleapis.com/css2?family=Quicksand:wght@400;500;600;700&display=swap"
-            rel="stylesheet"
-        />
         <script
             type="module"
             src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
@@ -22,171 +16,173 @@
         <title>VinSoftware</title>
     </head>
     <body>
-        <div class="wrapper">
-            <header class="header">
-                <div class="container">
-                    <a href="#" class="header_logo">
-                        <ion-icon
-                            class="header_logo-icon"
-                            name="logo-apple-ar"
-                        ></ion-icon>
-                        VinSoftware
-                    </a>
-                    <ion-icon class="menu-open" name="menu-outline"></ion-icon>
-                    <ul class="menu">
-                        <ion-icon
-                            class="menu-close"
-                            name="close-outline"
-                        ></ion-icon>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Trang chủ</a>
+        <header class="header">
+            <div class="container">
+                <a href="#" class="header_logo">
+                    <ion-icon
+                        class="header_logo-icon"
+                        name="logo-apple-ar"
+                    ></ion-icon>
+                    VinSoftware
+                </a>
+                <ion-icon class="menu-open" name="menu-outline"></ion-icon>
+                <ul class="menu">
+                    <ion-icon
+                        class="menu-close"
+                        name="close-outline"
+                    ></ion-icon>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Trang chủ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Sản phẩm</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Bảng giá</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Dịch vụ</a>
+                    </li>
+                    <li class="menu-item">
+                        <a href="#" class="menu-link">Liên hệ</a>
+                    </li>
+                    <li class="menu-item menu-auth">
+                        <a href="./auth/login.html" class="btn btn--primary"
+                            >Đăng nhập</a
+                        >
+                        <a href="./auth/signup.html" class="btn btn--secondary"
+                            >Đăng ký</a
+                        >
+                    </li>
+                </ul>
+            </div>
+        </header>
+        <main class="wrapper">
+            <section class="banner">
+                <div class="container banner-container">
+                    <div class="banner-content">
+                        <h1 class="banner-heading">VinSoftware</h1>
+                        <p class="banner-desc">
+                            Chuyên cung cấp các phần mềm dịch vụ liên qua đến
+                            Marketing, MMO,... trên các nền tảng mạng xã hội,
+                            thiết thế Website
+                        </p>
+                        <a href="#" class="btn btn--secondary">Đăng ký ngay</a>
+                    </div>
+                    <div class="banner-image">
+                        <img src="./assets/img/banner.jpg" alt="" srcset="" />
+                    </div>
+                </div>
+            </section>
+            <section class="product">
+                <div class="container product-container">
+                    <h2 class="product-heading group-heading">
+                        Danh sách các sản phẩm
+                    </h2>
+                    <ul class="product-list">
+                        <li class="product-card">
+                            <div class="product-image">
+                                <img
+                                    src="https://source.unsplash.com/random"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-name">Auto Golike</h4>
+                                <span class="product-category"
+                                    >Danh mục:
+                                    <strong>MMO Software</strong></span
+                                >
+                                <p class="product-desc">
+                                    Phần mềm giúp tự động làm việc App Golike
+                                    kèm theo tương tác tăng trust cho tài khoản
+                                    Facebook
+                                </p>
+                            </div>
+
+                            <div class="product-card-buttons">
+                                <a
+                                    href="#"
+                                    class="btn product-btn product-btn--try"
+                                    >Trải nghiệm</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn product-btn product-btn--detail"
+                                    >Chi tiết</a
+                                >
+                            </div>
                         </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Sản phẩm</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Bảng giá</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Dịch vụ</a>
-                        </li>
-                        <li class="menu-item">
-                            <a href="#" class="menu-link">Liên hệ</a>
-                        </li>
-                        <li class="menu-item menu-auth">
-                            <a href="#" class="btn btn--primary">Đăng nhập</a>
-                            <a href="#" class="btn btn--secondary">Đăng ký</a>
+                        <li class="product-card">
+                            <div class="product-image">
+                                <img
+                                    src="https://source.unsplash.com/random"
+                                    alt=""
+                                />
+                            </div>
+                            <div class="product-content">
+                                <h4 class="product-name">
+                                    VinSoft 956 Unlocker
+                                </h4>
+                                <span class="product-category"
+                                    >Danh mục:
+                                    <strong>MMO Software</strong></span
+                                >
+                                <p class="product-desc">
+                                    Phần mềm giúp giải Checkpoint 956 tài khoản
+                                    Facebook
+                                </p>
+                            </div>
+
+                            <div class="product-card-buttons">
+                                <a
+                                    href="#"
+                                    class="btn product-btn product-btn--try"
+                                    >Trải nghiệm</a
+                                >
+                                <a
+                                    href="#"
+                                    class="btn product-btn product-btn--detail"
+                                    >Chi tiết</a
+                                >
+                            </div>
                         </li>
                     </ul>
                 </div>
-            </header>
-            <main>
-                <section class="banner">
-                    <div class="container banner-container">
-                        <div class="banner-content">
-                            <h1 class="banner-heading">VinSoftware</h1>
-                            <p class="banner-desc">
-                                Chuyên cung cấp các phần mềm dịch vụ liên qua
-                                đến Marketing, MMO,... trên các nền tảng mạng xã
-                                hội, thiết thế Website
-                            </p>
-                            <a href="#" class="btn btn--secondary"
-                                >Đăng ký ngay</a
-                            >
-                        </div>
-                        <div class="banner-image">
-                            <img
-                                src="./assets/img/banner.jpg"
-                                alt=""
-                                srcset=""
-                            />
-                        </div>
+            </section>
+        </main>
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-contact-list">
+                    <div class="footer-contact-item">
+                        <ion-icon name="mail-outline"></ion-icon>
+                        <a href="mailto:vinhchann1106@gmail.com"
+                            >Email: vinhchann1106@gmail.com</a
+                        >
                     </div>
-                </section>
-                <section class="product">
-                    <div class="container product-container">
-                        <h2 class="product-heading group-heading">
-                            Danh sách các sản phẩm
-                        </h2>
-                        <ul class="product-list">
-                            <li class="product-card">
-                                <div class="product-image">
-                                    <img
-                                        src="https://source.unsplash.com/random"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="product-content">
-                                    <h4 class="product-name">Auto Golike</h4>
-                                    <span class="product-category"
-                                        >Danh mục:
-                                        <strong>MMO Software</strong></span
-                                    >
-                                    <p class="product-desc">
-                                        Phần mềm giúp tự động làm việc App
-                                        Golike kèm theo tương tác tăng trust cho
-                                        tài khoản Facebook
-                                    </p>
-                                </div>
-
-                                <div class="product-card-buttons">
-                                    <a
-                                        href="#"
-                                        class="btn product-btn product-btn--try"
-                                        >Trải nghiệm</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="btn product-btn product-btn--detail"
-                                        >Chi tiết</a
-                                    >
-                                </div>
-                            </li>
-                            <li class="product-card">
-                                <div class="product-image">
-                                    <img
-                                        src="https://source.unsplash.com/random"
-                                        alt=""
-                                    />
-                                </div>
-                                <div class="product-content">
-                                    <h4 class="product-name">
-                                        VinSoft 956 Unlocker
-                                    </h4>
-                                    <span class="product-category"
-                                        >Danh mục:
-                                        <strong>MMO Software</strong></span
-                                    >
-                                    <p class="product-desc">
-                                        Phần mềm giúp giải Checkpoint 956 tài
-                                        khoản Facebook
-                                    </p>
-                                </div>
-
-                                <div class="product-card-buttons">
-                                    <a
-                                        href="#"
-                                        class="btn product-btn product-btn--try"
-                                        >Trải nghiệm</a
-                                    >
-                                    <a
-                                        href="#"
-                                        class="btn product-btn product-btn--detail"
-                                        >Chi tiết</a
-                                    >
-                                </div>
-                            </li>
-                        </ul>
+                    <div class="footer-contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="tel:+843982828062">Phone: +84398282062</a>
                     </div>
-                </section>
-            </main>
-            <footer class="footer">
-                <div class="container">
-                    <div class="footer-contact-list">
-                        <div class="footer-contact-item">
-                            <ion-icon name="mail-outline"></ion-icon>
-                            <a href="#">Email: vinhchann1106@gmail.com</a>
-                        </div>
-                        <div class="footer-contact-item">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <a href="#">Phone: +84398282062</a>
-                        </div>
-                        <div class="footer-contact-item">
-                            <ion-icon name="call-outline"></ion-icon>
-                            <a href="#">Zalo: 0398282062</a>
-                        </div>
-                        <div class="footer-contact-item">
-                            <ion-icon name="logo-facebook"></ion-icon>
-                            <a href="#">Facebook: Vinh Chann</a>
-                        </div>
+                    <div class="footer-contact-item">
+                        <ion-icon name="call-outline"></ion-icon>
+                        <a href="#">Zalo: 0398282062</a>
                     </div>
-                    <span class="footer-copyright"
-                        >Copyright 2022 © Vinh Chann</span
-                    >
+                    <div class="footer-contact-item">
+                        <ion-icon name="logo-facebook"></ion-icon>
+                        <a
+                            href="https://www.facebook.com/vinh.chann1111"
+                            target="_blank"
+                            >Facebook: Vinh Chann</a
+                        >
+                    </div>
                 </div>
-            </footer>
-        </div>
+                <span class="footer-copyright"
+                    >Copyright 2022 © Vinh Chann</span
+                >
+            </div>
+        </footer>
 
-        <script src="./assets/script/main.js"></script>
+        <script src="./assets/script/menu.js"></script>
     </body>
 </html>
